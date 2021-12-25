@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="DAFTAR SISTEM OPERASI"
+            android:textColor="@color/purple_500"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtSistemOperasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="MacOS"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp" />
+
+        <TextView
+            android:id="@+id/txtDevloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Devloper"
+            android:textAlignment="center"
+            android:textColor="#888"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:autoLink="web"
+            android:text="Website"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/txtDeskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Deskripsi"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/loadingIndicator"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/lyCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMacOS"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:text="MacOS" />
+
+            <Button
+                android:id="@+id/btnUbuntu"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btnMacOS"
+                android:paddingLeft="31sp"
+                android:paddingRight="31sp"
+                android:text="Ubuntu" />
+
+            <Button
+                android:id="@+id/btnFreeBSD"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btnUbuntu"
+                android:paddingLeft="29sp"
+                android:paddingRight="29sp"
+                android:text="FreeBSD" />
+
+            <Button
+                android:id="@+id/btnCentos"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnFreeBSD"
+                android:paddingLeft="29sp"
+                android:paddingRight="29sp"
+                android:text="Centos" />
+
+            <Button
+                android:id="@+id/btnOracle"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnUbuntu"
+                android:layout_toRightOf="@+id/btnCentos"
+                android:paddingLeft="18sp"
+                android:paddingRight="18sp"
+                android:text="Oracle" />
+
+            <Button
+                android:id="@+id/btnCromeOS"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnFreeBSD"
+                android:layout_toRightOf="@+id/btnOracle"
+                android:paddingLeft="27sp"
+                android:paddingRight="27sp"
+                android:text="CromeOS" />
+
+            <Button
+                android:id="@+id/btnWindows"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnOracle"
+                android:paddingLeft="18sp"
+                android:paddingRight="18sp"
+                android:text="Windows" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:src="@android:drawable/ic_menu_rotate"
+        android:text="Refresh" />
+
+</RelativeLayout>
